@@ -1,7 +1,7 @@
 .container {
   height: 100px;
   padding: 0px 50px;
-  background-color: orange;
+  background-color: rgb(212, 162, 69);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,10 +13,11 @@
   flex: 1;
   display: flex;
   align-items: center;
+  color: rgb(255, 255, 255);
 }
 
 .callButton {
-  background-color: azure;
+  background-color: rgb(255, 255, 255);
   width: 40px;
   height: 40px;
   display: flex;
@@ -30,7 +31,11 @@
 
 .item:nth-child(2) {
   flex: 3;
-  background-color: aliceblue;
+  justify-content: center;
+}
+
+.item:nth-child(3) {
+  justify-content: flex-end;
 }
 
 .texts {
@@ -38,7 +43,48 @@
   color: white;
 }
 
-.text:first-child {
-  font-size: 16px;
-  font-weight: 600;
+.texts:first-child {
+  font-size: 162x;
+  font-weight: 500;
+}
+.texts:last-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.list {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: white;
+}
+
+.listItem {
+  margin: 20px;
+  font-weight: 500;
+}
+
+.cart {
+  position: relative;
+
+}
+
+.counter {
+  position: absolute;
+  top: -3px;
+  right: -7px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  color: rgb(139, 40, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid  rgb(192, 125, 1);;
+}
+
+.localMallOutlined{
+  font-size: 40px;
 }

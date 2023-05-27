@@ -1,0 +1,42 @@
+.container {
+  height: calc(90vh - 100px);
+  background-color: rgb(212, 162, 69);
+  overflow: hidden;
+}
+.arrowContainer {
+  position: absolute;
+  /* height: 20%; */
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.wrapper {
+  width: 325vw;
+  height: 100%;
+  /* height: calc(100vw - 100px); */
+  display: flex;
+  transition: all 1.5s ease-in-out;
+}
+
+.img {
+  margin: 0 40px;
+}
+
+.imgContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.arrowLeft,
+.arrowRight {
+  font-size: 100px;
+  color: white;
+  z-index: 999;
+
+}
