@@ -1,11 +1,18 @@
-'use client'
+"use client";
 
 import Image from "next/image";
 import styles from "../styles/Orders.module.css";
 
-import { Album } from "@mui/icons-material";
+import { CheckOutlined, SafetyCheckOutlined } from "@mui/icons-material";
 
 const Orders = () => {
+  const status = 0;
+  const statusClass = (index) => {
+    if (index - status < 1) return styles.done;
+    if (index - status === 1) return styles.inProgress;
+    if (index - status > 1) return styles.undone;
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.left}>
@@ -39,12 +46,42 @@ const Orders = () => {
             </tr>
           </table>
         </div>
-      </div>
-      <div className={styles.row}>
-        <div className={styles.status}>
-          <Album />
-          <span>Payment</span>
-          <div className={styles.checkedIcon}></div>
+        <div className={styles.row}>
+          <div className={statusClass(0)}>
+            <CheckOutlined className={styles.icon} />
+            <span>Payment</span>
+            <div className={styles.checkedIcon}>
+              <SafetyCheckOutlined className={styles.icon} />
+            </div>
+          </div>
+          <div className={statusClass(1)}>
+            <CheckOutlined className={styles.icon} />
+            <span>Preparing</span>
+            <div className={styles.checkedIcon}>
+              <SafetyCheckOutlined className={styles.icon} />
+            </div>
+          </div>
+          <div className={statusClass(2)}>
+            <CheckOutlined className={styles.icon} />
+            <span>On its way</span>
+            <div className={styles.checkedIcon}>
+              <SafetyCheckOutlined className={styles.icon} />
+            </div>
+          </div>
+          <div className={statusClass(3)}>
+            <CheckOutlined className={styles.icon} />
+            <span>Delivered</span>
+            <div className={styles.checkedIcon}>
+              <SafetyCheckOutlined className={styles.icon} />
+            </div>
+          </div>
+          <div className={statusClass(4)}>
+            <CheckOutlined className={styles.icon} />
+            <span>Payment</span>
+            <div className={styles.checkedIcon}>
+              <SafetyCheckOutlined className={styles.icon} />
+            </div>
+          </div>
         </div>
       </div>
       <div className={styles.right}>

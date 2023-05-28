@@ -9,7 +9,6 @@
 .table {
   width: 100%;
   border-spacing: 10px;
-
 }
 
 .table td {
@@ -17,6 +16,25 @@
   text-align: center;
   vertical-align: middle;
 }
+
+.row:last-child{
+  width: 90%;
+  display:flex;
+  justify-content: flex-end;
+}
+
+.status{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 25px;
+}
+
+.icon{
+  color: goldenrod;
+}
+
 .right {
   flex: 1;
 }
@@ -25,7 +43,7 @@
   max-height: 250px;
   background-color: rgb(41, 41, 41);
   padding: 50px;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
