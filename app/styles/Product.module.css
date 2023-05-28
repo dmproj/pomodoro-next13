@@ -21,6 +21,7 @@
 .title {
   margin-top: 10px;
   margin-bottom: 20px;
+  color: #444;
 }
 
 .price {
@@ -41,6 +42,14 @@
 
 .price u {
   border-bottom: 1px solid goldenrod;
+}
+
+.desc{
+  color: #444;
+}
+.choose{
+  color: #444;
+  margin-top: 10px;
 }
 
 .sizes {
