@@ -1,0 +1,52 @@
+.container {
+  padding: 50px;
+  display: flex;
+}
+.left {
+  flex: 2;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 10px;
+
+}
+
+.table td {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.right {
+  flex: 1;
+}
+.wrapper {
+  width: 40%;
+  max-height: 250px;
+  background-color: rgb(41, 41, 41);
+  padding: 50px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: lightgray;
+}
+
+.title {
+}
+
+.totaltext {
+}
+
+.totalTextTitle {
+  margin-right: 10px;
+}
+
+.checkout {
+  background-color: white;
+  height: 30px;
+  color: rgb(79, 79, 131);
+  margin-top: 30px;
+  font-weight: bold;
+  cursor: not-allowed;
+}
