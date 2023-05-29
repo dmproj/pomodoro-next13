@@ -75,13 +75,6 @@ const Orders = () => {
               <SafetyCheckOutlined className={styles.icon} />
             </div>
           </div>
-          <div className={statusClass(4)}>
-            <CheckOutlined className={styles.icon} />
-            <span>Payment</span>
-            <div className={styles.checkedIcon}>
-              <SafetyCheckOutlined className={styles.icon} />
-            </div>
-          </div>
         </div>
       </div>
       <div className={styles.right}>
